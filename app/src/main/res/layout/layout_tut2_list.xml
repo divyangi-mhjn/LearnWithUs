@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.learnwithus.Tut2Activity"
+    android:background="#ededed">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/value1"
+        android:gravity="center"
+        android:background="@drawable/style_but"
+        android:textColor="#696969"
+
+        android:text="Please wait for the server to load"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/value1"
+        android:gravity="center"
+        android:background="@drawable/style_but"
+        android:textColor="#696969"
+
+        android:id="@+id/value2" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textColor="#696969"
+        android:layout_below="@+id/value2"
+        android:id="@+id/value3"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/style_but"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="#696969"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/style_but"
+        android:layout_below="@+id/value3"
+        android:id="@+id/value4" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:id="@+id/value5"
+        android:textColor="#696969"
+        android:layout_below="@+id/value4"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/style_but"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textColor="#696969"
+        android:id="@+id/value6"
+        android:layout_below="@+id/value5"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/style_but"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

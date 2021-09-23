@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfdfdf"
+    android:id="@+id/first"
+
+
+    tools:context="com.example.hp.learnwithus.ChooseSubject">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="CHOOSE  YOUR \n SUBJECT"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:id="@+id/suu"
+        android:background="#00bcd4"
+        android:textColor="#ffffff"
+        android:fontFamily="cursive"
+        android:textStyle="bold"/>
+    <include layout="@layout/content_main1"
+        android:layout_height="500dp"
+        android:layout_width="match_parent"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="150dp" />
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.hp.learnwithus.Signup">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+          android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/ic_launcher_round"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="You are One Step Away to access Learn With Us"
+            android:gravity="center"
+            android:textColor="#787878"
+            android:id="@+id/you"
+            android:layout_marginTop="5dp"
+            />
+
+
+     <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textColorHint="#00bcd4"
+         app:hintTextAppearance="@style/MyHintText"
+         android:layout_marginTop="10dp"
+         >
+
+         <EditText
+             android:id="@+id/username"
+             android:layout_width="match_parent"
+             android:layout_height="50sp"
+             android:hint="E-mail"
+             android:inputType="text"
+             android:textColor="#787878"
+             android:theme="@style/MyEditText" />
+     </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#00bcd4"
+            app:hintTextAppearance="@style/MyHintText"
+
+            >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:id="@+id/password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#787878"
+
+            android:theme="@style/MyEditText"
+            />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/sign_up_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#00bcd4"
+            android:text="@string/action_sign_in_short"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:text="Already a user?login here"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:textColor="#787878"/>
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

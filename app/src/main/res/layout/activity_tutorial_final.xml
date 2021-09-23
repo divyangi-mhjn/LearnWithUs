@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.learnwithus.TutorialFinal">
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/butt"
+        android:src="@drawable/favafter"
+        android:tint="#ffffff"
+        android:gravity="right"
+        android:layout_marginLeft="10dp"
+
+        android:layout_toRightOf="@+id/ert"
+        android:layout_toEndOf="@+id/ert"
+        android:scaleType="centerInside"
+        android:background="@drawable/circles_clor"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ert"
+        android:textSize="30dp"
+        android:fontFamily="casual"
+        android:textColor="#00bcd4"
+        android:text="JAVA"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+
+
+        />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/butt"
+        android:layout_marginTop="5dp"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/one"
+
+        android:textIsSelectable="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/two"
+        android:layout_below="@+id/one"
+        android:layout_marginTop="10dp"
+        android:textIsSelectable="true"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/three"
+        android:layout_below="@+id/two"
+        android:layout_marginTop="10dp"
+        android:textIsSelectable="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/four"
+        android:layout_below="@+id/three"
+        android:layout_marginTop="10dp"
+        android:textIsSelectable="true"
+        />
+    </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

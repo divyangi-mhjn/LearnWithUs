@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.learnwithus.Tut1Activity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/colorPrimary"
+
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:elevation="4dp"
+            android:contentInsetLeft="3dp">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="30dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawVerticalTrack="false">
+
+
+
+    <ImageButton
+        android:id="@+id/basic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="left"
+        android:layout_below="@+id/slider"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/circles_clor"
+        android:src="@drawable/pp"
+        android:elevation="5dp"
+        android:scaleType="centerInside"
+        android:tint="#ffffff"
+
+        android:paddingBottom="6dp"
+        android:shadowColor="#9f933a"
+        android:visibility="visible"
+        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basic Concepts"
+                android:id="@+id/basic1"
+                android:layout_below="@+id/basic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+
+                android:textSize="20sp"/>
+    <ImageButton
+        android:id="@+id/loop"
+        android:src="@drawable/infinite"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="37dp"
+        android:scaleType="centerInside"
+        android:tint="#ffffff"
+        android:background="@drawable/circles_clor"
+        android:elevation="5dp"
+        android:paddingBottom="6dp"
+        android:shadowColor="#9f933a"
+        android:visibility="visible"
+        android:layout_below="@+id/basic1"
+        android:layout_toRightOf="@+id/array1"
+        android:layout_toEndOf="@+id/basic1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Control Statements"
+                android:id="@+id/loop1"
+                android:padding="10dp"
+
+                android:gravity="right"
+                android:textSize="20sp"
+                android:layout_below="@+id/loop"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/array"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="left"
+        android:background="@drawable/circles_clor"
+        android:src="@drawable/vector"
+        android:elevation="5dp"
+        android:scaleType="centerInside"
+        android:tint="#ffffff"
+
+
+        android:padding="22dp"
+        android:shadowColor="#9f933a"
+        android:visibility="visible"
+        android:layout_above="@+id/loop1"
+        android:layout_toLeftOf="@+id/basic1"
+        android:layout_toStartOf="@+id/basic1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrays"
+                android:id="@+id/array1"
+                android:gravity="left"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/array"
+                android:layout_alignRight="@+id/array"
+                android:layout_alignEnd="@+id/array"
+                android:layout_marginRight="19dp"
+                android:layout_marginEnd="19dp" />
+
+
+            <ImageButton
+                 android:id="@+id/object"
+                 android:layout_width="100dp"
+                 android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/circles_clor"
+                   android:src="@drawable/objnew"
+                android:elevation="5dp"
+                android:scaleType="centerInside"
+                android:tint="#ffffff"
+
+
+                android:padding="20dp"
+                android:layout_marginLeft="140dp"
+                android:shadowColor="#9f933a"
+                android:visibility="visible"
+                android:layout_marginTop="17dp"
+                android:layout_below="@+id/loop1"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java Object Class"
+                android:id="@+id/object1"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/object"
+
+                android:layout_marginRight="19dp"
+                android:layout_marginEnd="19dp" />
+
+            <ImageButton
+                android:id="@+id/inher"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                android:background="@drawable/circles_clor"
+                android:src="@drawable/obj"
+                android:elevation="5dp"
+                android:scaleType="centerInside"
+                android:tint="#ffffff"
+
+                android:padding="15dp"
+
+
+                android:shadowColor="#9f933a"
+                android:visibility="visible"
+                android:layout_alignTop="@+id/abs"
+                android:layout_alignLeft="@+id/array"
+                android:layout_alignStart="@+id/array" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Polymorphism and\n Inheritance"
+                android:id="@+id/inher1"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/inher"
+                android:layout_marginLeft="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:padding="5dp"
+
+
+                 />
+            <ImageButton
+                android:id="@+id/abs"
+                android:src="@drawable/encap"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerInside"
+                android:tint="#ffffff"
+                android:background="@drawable/circles_clor"
+                android:elevation="5dp"
+                android:padding="15dp"
+
+
+                android:shadowColor="#9f933a"
+                android:visibility="visible"
+                android:layout_below="@+id/object1"
+                android:layout_alignLeft="@+id/loop"
+                android:layout_alignStart="@+id/loop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="  Abstraction and\n    Encapsulation"
+                android:id="@+id/abs1"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/abs"
+                android:padding="15dp"
+                android:gravity="right"
+
+
+
+
+                android:layout_marginBottom="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+            <ImageButton
+                android:id="@+id/exc"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/circles_clor"
+                android:src="@drawable/excp"
+                android:elevation="5dp"
+                android:scaleType="centerInside"
+                android:tint="#ffffff"
+
+                android:padding="15dp"
+                android:layout_marginLeft="140dp"
+                android:shadowColor="#9f933a"
+                android:visibility="visible"
+                android:layout_marginTop="17dp"
+                android:layout_below="@+id/abs1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exception Handling"
+                android:id="@+id/exc1"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/exc"
+
+                android:layout_marginRight="19dp"
+                android:layout_marginEnd="19dp" />
+
+            <ImageButton
+                android:id="@+id/multi"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                android:background="@drawable/circles_clor"
+                android:src="@drawable/multi"
+                android:elevation="5dp"
+                android:scaleType="centerInside"
+                android:tint="#ffffff"
+
+                android:padding="15dp"
+
+
+                android:shadowColor="#9f933a"
+                android:visibility="visible"
+                android:layout_alignTop="@+id/io"
+                android:layout_alignLeft="@+id/inher"
+                android:layout_alignStart="@+id/inher" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java Multithreading"
+                android:id="@+id/multi1"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/multi"
+                android:layout_marginLeft="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="5dp"
+
+
+                 />
+            <ImageButton
+                android:id="@+id/io"
+                android:src="@drawable/ip"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerInside"
+                android:tint="#ffffff"
+                android:padding="15dp"
+                android:background="@drawable/circles_clor"
+                android:elevation="5dp"
+
+                android:shadowColor="#9f933a"
+                android:visibility="visible"
+                android:layout_below="@+id/exc1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" Java I/O"
+                android:id="@+id/io1"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/io"
+                android:padding="10dp"
+                android:gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="14dp"
+
+                 />
+
+
+            <ImageButton
+                android:id="@+id/ntw"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/circles_clor"
+                android:src="@drawable/net"
+                android:elevation="5dp"
+                android:scaleType="centerInside"
+                android:tint="#ffffff"
+
+                android:padding="15dp"
+                android:layout_marginLeft="140dp"
+                android:shadowColor="#9f933a"
+                android:visibility="visible"
+                android:layout_marginTop="17dp"
+                android:layout_below="@+id/multi1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java Networking"
+                android:id="@+id/ntw1"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/ntw"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginRight="19dp"
+                android:layout_marginEnd="19dp" />
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>
